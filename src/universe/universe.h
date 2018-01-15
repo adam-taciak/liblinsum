@@ -7,6 +7,7 @@ class Universe
 {
     public:
         void show();
+        std::vector<double> get_list();
 
     protected:
         std::vector<double> list;

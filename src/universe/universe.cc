@@ -10,3 +10,8 @@ void Universe::show()
         std::cout << this->list.at(i) << std::endl;
     }
 }
+
+std::vector<double> Universe::get_list()
+{
+    return this->list;
+}
