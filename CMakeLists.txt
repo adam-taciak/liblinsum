@@ -9,6 +9,8 @@ include_directories(include)
 set (liblinsum_VERSION_MAJOR 1)
 set (liblinsum_VERSION_MINOR 0)
 
+set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wall")
+
 file(GLOB SOURCES "src/*.cc" "src/universe/*.cc" "src/sets/*.cc" "src/functions/*.cc")
 
 add_executable (liblinsum ${SOURCES})
