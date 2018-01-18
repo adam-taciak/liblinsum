@@ -4,9 +4,8 @@
 
 CrispSet::CrispSet()
 {
-    this->number_of_allowed_functions = 1;
     this->universe = NULL;
-    this->functions = NULL;
+    this->function = NULL;
 }
 
 double CrispSet::y(double x)
@@ -24,7 +23,7 @@ double CrispSet::y(double x)
     }
 
     // Puth the value to the membership function
-    return this->functions->at(0)->y(x);
+    return this->function->y(x);
 
     return 0.0;
 }
@@ -39,28 +38,28 @@ bool CrispSet::is_normal()
     return false;
 }
 
-void CrispSet::add_universe(Universe *universe)
-{
-    if (this->universe)
-    {
-        delete this->universe;
-    }
+// void CrispSet::add_universe(Universe *universe)
+// {
+//     if (this->universe)
+//     {
+//         delete this->universe;
+//     }
 
-    this->universe = universe;
-}
+//     this->universe = universe;
+// }
 
-void CrispSet::add_membership_function(MembershipFunction *function)
-{
-    if (!this->functions)
-    {
-        this->functions = new std::vector<MembershipFunction *>();
-    }
+// void CrispSet::add_membership_function(MembershipFunction *function)
+// {
+//     if (!this->functions)
+//     {
+//         this->functions = new std::vector<MembershipFunction *>();
+//     }
 
-    // Sanity check
-    if (this->functions->size() > 1)
-    {
-        throw std::range_error("This kind of membership function can have only one funtion!");
-    }
+//     // Sanity check
+//     if (this->functions->size() > 1)
+//     {
+//         throw std::range_error("This kind of membership function can have only one funtion!");
+//     }
 
-    this->functions->push_back(function);
-}
+//     this->functions->push_back(function);
+// }

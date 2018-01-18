@@ -9,6 +9,7 @@ class MembershipFunction
 {
     public:
         virtual double y(double x) = 0;
+        virtual void show() = 0;
 };
 
 #endif

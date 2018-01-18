@@ -1,5 +1,7 @@
 #include "characteristic.h"
 
+#include <iostream>
+
 double Characteristic::y(double x)
 {
     if (x > 0)
@@ -10,4 +12,9 @@ double Characteristic::y(double x)
     {
         return 0.0;
     }
+}
+
+void Characteristic::show()
+{
+    std::cout << "Characteristic membership function" << std::endl;
 }

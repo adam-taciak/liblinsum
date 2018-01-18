@@ -11,14 +11,14 @@ class Set
         virtual bool is_normal() = 0;
         virtual double y(double x) = 0;
 
-        virtual void add_universe(Universe *universe) = 0;
-        virtual void add_membership_function(MembershipFunction *function) = 0;
+        void set_universe(Universe *universe);
+        void set_membership_function(MembershipFunction *function);
+
+        MembershipFunction *get_membership_function();
 
     protected:
         Universe *universe;
-        int number_of_allowed_functions;
-        std::vector<MembershipFunction *> *functions;
-
+        MembershipFunction *function;
 };
 
 #endif

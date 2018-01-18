@@ -11,8 +11,8 @@ class CrispSet: public Set
         bool is_empty();
         bool is_normal();
         
-        void add_universe(Universe *universe);
-        void add_membership_function(MembershipFunction *function);
+        // void add_universe(Universe *universe);
+        // void add_membership_function(MembershipFunction *function);
 };
 
 #endif

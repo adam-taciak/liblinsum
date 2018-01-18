@@ -9,7 +9,11 @@ class Triangular: public MembershipFunction
         Triangular();
         Triangular(double a, double b, double c);
 
+        /*!
+         *
+         */
         double y(double x);
+        void show();
 
     private:
         double a;

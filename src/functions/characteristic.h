@@ -7,6 +7,7 @@ class Characteristic: public MembershipFunction
 {
     public:
         double y(double x);
+        void show();
 };
 
 #endif
