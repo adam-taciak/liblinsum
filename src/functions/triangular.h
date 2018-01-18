@@ -6,7 +6,15 @@
 class Triangular: public MembershipFunction
 {
     public:
+        Triangular();
+        Triangular(double a, double b, double c);
+
         double y(double x);
+
+    private:
+        double a;
+        double b;
+        double c;
 };
 
 #endif

@@ -8,7 +8,7 @@
 class Dense : public Universe
 {
     public:
-        Dense();
+        Dense(): min_boundry(0.0), max_boundry(0.0) { };
         Dense(double min, double max);
         void set_boundry(double min, double max);
 

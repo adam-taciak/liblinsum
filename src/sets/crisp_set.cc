@@ -13,7 +13,7 @@ double CrispSet::y(double x)
 {
     double value = 0;
     // Check if a given value exists in the universe
-    for (int i = 0; i < this->universe->get_list().size(); ++i)
+    for (unsigned int i = 0; i < this->universe->get_list().size(); ++i)
     {
         // std::cout << i << " " << this->universe->get_list()[i] << std::endl;
         if (x == this->universe->get_list()[i])
@@ -31,12 +31,12 @@ double CrispSet::y(double x)
 
 bool CrispSet::is_empty()
 {
-    //
+    return false;
 }
 
 bool CrispSet::is_normal()
 {
-    //
+    return false;
 }
 
 void CrispSet::add_universe(Universe *universe)

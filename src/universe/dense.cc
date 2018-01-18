@@ -1,13 +1,13 @@
 #include "dense.h"
 
-Dense::Dense()
-{
-
-}
+// Dense::Dense()
+// {
+// }
 
 Dense::Dense(double min, double max)
 {
-
+    this->min_boundry = min;
+    this->max_boundry = max;
 }
 
 void Dense::set_boundry(double min, double max)
